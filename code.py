@@ -5,16 +5,16 @@ import sys
 
 #path="/home/hackathon/shubham/iehack/"+str(sys.argv)
 
-clip = mp.VideoFileClip(r"hackathon/shubham/iehack/xyz.mp4")
+clip = mp.VideoFileClip(r"xyz.mp4")
 
 
-clip.audio.write_audiofile(r"hackathon/shubham/iehack/xyz.wav")
+clip.audio.write_audiofile(r"xyz.wav")
 
 
 r = sr.Recognizer()
 
 
-with sr.AudioFile('hackathon/shubham/iehack/xyz.wav') as source:
+with sr.AudioFile('xyz.wav') as source:
     # listen for the data (load audio to memory)
     audio_data = r.record(source)
     # recognize (convert from speech to text)
